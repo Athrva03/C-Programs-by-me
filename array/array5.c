@@ -2,19 +2,11 @@
 int *reverse(int arr[], int start, int end);
 int main()
 {
-
     int num;
     // printf("Enter the size of array: ");
     // scanf("%d", &num);
 
     int arr[] = {3, 4, 5, 6, 7, 88, 8};
-
-    // printf("Enter the array elements: ");
-
-    // for (int i = 0; i < num; i++)
-    // {
-    //     scanf("%d", &arr[i]);
-    // }
 
     int n = sizeof(arr) / sizeof(arr[0]);
 
@@ -33,14 +25,15 @@ int main()
             if (reversedArray[j] > reversedArray[j + 1])
             {
                 int temp = reversedArray[j];
-                reversedArray[j] = reversedArray[j + 1];
+                reversedArray[j] = reversedArray[j+1];
+                
                 reversedArray[j + 1] = temp;
             } // End if
         } // End for j
     } // End for i
 
     printf("\nAfter Ascending\n");
-    printf("after reversing & Before Ascending\n");
+    printf("after reversing & After Ascending\n");
     for (int i = 0; i < n; i++)
     {
         printf("%d ", reversedArray[i]);
