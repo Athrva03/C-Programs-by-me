@@ -25,7 +25,7 @@ int main(){
     strcpy(com.country,"India");
 
     com.emp.employeeID=101;
-    strcpy(com.emp.emplyoeeName,"Atherv");
+    strcpy(com.emp.emplyoeeName,"Unknown");
     strcpy(com.emp.emplyoeeDepartment,"IT");
     com.emp.salary=30000;
 
